@@ -12141,6 +12141,9 @@ p {
 .bg-grenston {
   background-color: #118518; }
 
+.jumbotron-carousel .carousel {
+  background-color: red; }
+
 .img-fluid,
 .custom-logo {
   max-width: 14rem;
