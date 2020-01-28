@@ -1,44 +1,61 @@
-// about page etc uses a card as a design feature
-.card-article {
-	.wp-block-image {
-		img {
-			width: 100%;
-		}
+.card {
+	figure {
+		margin-bottom: 0;
 	}
 }
-
-.card-subtitle {
-    sup {
-		top: -1.2rem;
-    }
-}
-
-// align buttons to the bottom of the card in pricing
-.section-jobs,
-.card-body {
+.card-img-overlay {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-	.btn {
-		margin: auto;
+	h3 {
+		margin-bottom: $s-md;
+		text-transform: uppercase;
 	}
 }
 
-.listing-item {
-	.excerpt {
-		display: flex;
-		flex-direction: column;
+// about page etc uses a card as a design feature
+// .card-article {
+// 	.wp-block-image {
+// 		img {
+// 			width: 100%;
+// 		}
+// 	}
+// }
+//
+// .card-subtitle {
+//     sup {
+// 		top: -1.2rem;
+//     }
+// }
 
-		p {
-			margin-top: auto;
-		}
-
-		.btn {
-			margin-top: 0;
-		}
-	}
-}
-
-.bg-grenston {
-	background-color: $c-primary-grenston;
-}
+// align buttons to the bottom of the card in pricing
+// .section-jobs,
+// .card-body {
+// 	display: flex;
+// 	flex-direction: column;
+//
+// 	.btn {
+// 		margin: auto;
+// 	}
+// }
+//
+// .listing-item {
+// 	.excerpt {
+// 		display: flex;
+// 		flex-direction: column;
+//
+// 		p {
+// 			margin-top: auto;
+// 		}
+//
+// 		.btn {
+// 			margin-top: 0;
+// 		}
+// 	}
+// }
+//
+// .bg-grenston {
+// 	background-color: $c-primary-grenston;
+// }

@@ -1,0 +1,4 @@
+.btn {
+	@include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, 0);
+	text-transform: uppercase;
+}

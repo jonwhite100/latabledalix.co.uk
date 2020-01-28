@@ -36,12 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 			<div class="col">
 				<div class="site-info">
-					Big Plane is a trading name of bpm web design ltd.
-					Registered number: 08710002
-					Registered office: First Floor, Telecom House, 125-135 Preston Road, Brighton, East Sussex, BN1 6AF<br />
-					<br />
-					VAT number: 171425327.
-					All content &copy; bpm web design ltd <?php echo date("Y"); ?>.
+					All content &copy; La Table d'Alix <?php echo date("Y"); ?>. Website by <a href="https://bigplane.co.uk" title="Go to the Big Plane website">Big Plane</a>.
 				</div><!-- .site-info -->
 			</div>
 		</div><!-- row end -->

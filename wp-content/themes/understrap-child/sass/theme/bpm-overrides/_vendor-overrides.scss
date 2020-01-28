@@ -1,10 +1,11 @@
 // Leave space at the top of the page for the fixed navbar.
 .site {
-    margin-top: $s-xl - $s-sm;
+    margin-top: 0;
+}
 
-	@include media-breakpoint-up(md) {
-		margin-top: $s-xl - ($s-xs + $s-xxs);
-	}
+// not using sections so add some margins
+.entry-content {
+	margin-top: $s-xl;
 }
 
 // animate.css

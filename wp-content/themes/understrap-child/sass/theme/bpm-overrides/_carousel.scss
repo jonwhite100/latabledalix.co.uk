@@ -1,5 +1,43 @@
-.carousel {
-	.jumbotron-carousel & {
-		background-color: red;
+.jumbotron-carousel {
+	.jumbotron-main {
+		margin-bottom: 0;
+	}
+
+	.carousel {
+		width: 100%;
+		height: $s-jumbotron-height;
+	}
+
+	.carousel-item {
+		position: relative;
+		width: 100%;
+		height: $s-jumbotron-height;
+	}
+
+	.img-to-parent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+	}
+}
+
+.carousel-caption {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+	.animated {
+		&.bounce {
+			animation-duration: 5s;
+		}
+	}
+
+	a {
+		color: $white;
 	}
 }
