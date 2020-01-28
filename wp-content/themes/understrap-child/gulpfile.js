@@ -136,6 +136,12 @@ gulp.task( 'scripts', function() {
   gulp.src( scripts, { allowEmpty: true } )
     .pipe( concat( 'child-theme.min.js' ) )
     .pipe( uglify() )
+	// JMW: Stops the watch being broken if there is a JS failure
+	.on('error', function (err) {
+		console.log(err.toString());
+		this.emit('end');
+	})
+	// end of JMW
     .pipe( gulp.dest( paths.js ) );
 
   return gulp.src( scripts, { allowEmpty: true } )

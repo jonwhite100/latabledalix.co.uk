@@ -24,12 +24,14 @@
   },
   "homepage": "https://understrap.com",
   "dependencies": {
+    "@babel/core": "^7.8.3",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.3",
     "del": "^4.1.0",
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-clone": "^2.0.1",
     "gulp-concat": "^2.6.1",
@@ -38,6 +40,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-merge": "^0.1.1",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-rimraf": "^0.2.2",
@@ -46,10 +49,21 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
+    "jquery": "^1.9.1",
     "merge2": "^1.2.3",
-    "popper.js": "^1.15.0",
+    "popper.js": "^1.16.1",
     "run-sequence": "^2.2.1",
     "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "gulp-touch-fd": "github:funkedigital/gulp-touch-fd"
   }
 }

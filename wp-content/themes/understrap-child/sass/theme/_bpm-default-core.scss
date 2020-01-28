@@ -1,11 +1,19 @@
 // Defaults
 $white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 $black: #000 !default;
 
 // Site brand colours
-$secondary: #4a9bd3; //logo light blue. original theme #4ac4f3
-$primary: #126ab4; // logo darker blue
-
+$primary: #edd0c5; // logo darker blue
+$secondary: #4e4351; // euro pink
 
 // Font sizing
 $font-size-base: 1rem !default;
@@ -17,7 +25,7 @@ $h5-font-size: $font-size-base * 1.1 !default;
 $h6-font-size: $font-size-base !default;
 
 // Site fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Puritan&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
 
 // Spacers
 $spacer: 1rem; // 16px;

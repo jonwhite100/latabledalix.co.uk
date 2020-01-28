@@ -17,14 +17,17 @@ $c-fixed-bg-overlay: $black !default;
 
 // Fonts
 $font-family-sans-serif: 'Open Sans', sans-serif !default;
-$headings-font-family: 'Poppins', sans-serif !default;
-$headings-font-weight: 600 !default;
+$headings-font-family: 'Puritan', sans-serif !default;
+$headings-font-weight: 400 !default;
 $headings-text-transform: 'none' !default;
 
+// FOnt Awesome
+$c-fa-stack-icon-outer-inverted: $gray-700 !default;
+
 // Footer widgets
-$c-wrapper-footer-widgets: $white !default;
+$c-wrapper-footer-widgets: $gray-700 !default;
 $c-wrapper-footer-widgets-bg: $primary !default;
-$c-wrapper-footer-widgets-link: $white !default;
+$c-wrapper-footer-widgets-link: $gray-700 !default;
 
 // Footer copyright info
 $c-wrapper-footer: $white !default;
