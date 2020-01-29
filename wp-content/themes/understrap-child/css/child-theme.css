@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Puritan&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Italianno&display=swap");
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -11882,8 +11882,17 @@ body {
   padding-bottom: .75rem;
   padding-left: 2rem; }
 
+.jumbotron-carousel .carousel {
+  width: 100%;
+  height: 42rem; }
+
 .section-testimonials .carousel-inner {
   min-height: 10rem; }
+
+.jumbotron-carousel .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 42rem; }
 
 .section-testimonials .carousel-item {
   text-align: center; }
@@ -11900,6 +11909,27 @@ body {
 .section-testimonials .carousel-indicators {
   bottom: -30px;
   margin-bottom: 0; }
+
+.jumbotron-carousel .carousel-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
+  .jumbotron-carousel .carousel-caption .animated.bounce {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s; }
+  .jumbotron-carousel .carousel-caption a {
+    color: #fff; }
 
 .cinemagraph {
   position: relative;
@@ -12289,6 +12319,13 @@ label {
           justify-content: center;
   border-radius: 0;
   overflow: hidden; }
+  .jumbotron-carousel .img-to-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
 
 .jumbotron-bg {
   position: absolute;
@@ -12327,6 +12364,8 @@ label {
           justify-content: center;
   width: 100%;
   margin: auto; }
+  .jumbotron-carousel .jumbotron-main {
+    margin-bottom: 0; }
 
 .jumbotron-text {
   display: -webkit-box;
@@ -12698,47 +12737,6 @@ p {
     margin-bottom: 2rem;
     text-transform: uppercase; }
 
-.jumbotron-carousel .jumbotron-main {
-  margin-bottom: 0; }
-
-.jumbotron-carousel .carousel {
-  width: 100%;
-  height: 42rem; }
-
-.jumbotron-carousel .carousel-item {
-  position: relative;
-  width: 100%;
-  height: 42rem; }
-
-.jumbotron-carousel .img-to-parent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover; }
-
-.carousel-caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%; }
-  .carousel-caption .animated.bounce {
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s; }
-  .carousel-caption a {
-    color: #fff; }
-
 .img-fluid,
 .custom-logo {
   max-width: 14rem;
@@ -12751,6 +12749,15 @@ p {
     max-height: 3rem;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out; }
+
+.navbar > .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .navbar-brand {
   font-family: "Puritan", sans-serif;
@@ -12845,7 +12852,7 @@ p {
   margin-top: 0; }
 
 .entry-content {
-  margin-top: 6rem; }
+  margin-top: 2rem; }
 
 .animated.card.delay-1s {
   -webkit-animation-delay: .33s;

@@ -12,6 +12,14 @@
 	}
 }
 
+// Center the content
+.navbar {
+	>.container {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 .navbar-brand {
 	font-family: $headings-font-family;
 	font-size: $font-size-base * 1.25;
