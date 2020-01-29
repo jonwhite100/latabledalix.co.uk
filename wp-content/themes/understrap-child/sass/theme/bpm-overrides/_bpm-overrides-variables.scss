@@ -16,12 +16,14 @@ $card-border-radius: 0 !default;
 $card-border-width: 0 !default;
 
 // Fixed background
-$path-to-fixed-bg-newsletter: 'uploads/2019/09/bigplane-test-image.jpg' !default;
+$path-to-fixed-bg-newsletter: 'uploads/2020/01/platter05.jpg' !default;
 $c-fixed-bg-overlay: $black !default;
 
 // Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Italianno&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+
 $font-family-sans-serif: 'Open Sans', sans-serif !default;
-$headings-font-family: 'Puritan', sans-serif !default;
+$headings-font-family: 'Italianno', sans-serif !default;
 $headings-font-weight: 400 !default;
 $headings-text-transform: 'none' !default;
 
@@ -42,9 +44,9 @@ $c-footer-menu-link: $white !default;
 // Jumbotron
 $c-jumbotron-h1: $white !default;
 $c-jumbotron-h2: $white !default;
-$c-jumbotron-heading-bg: rgba($black, .25) !default;
+$c-jumbotron-heading-bg: transparent !default; //rgba($black, .25) !default;
 $c-jumbotron-base-bg: $white !default;
-$s-jumbotron-height: $s-xl * 7 !default;
+$s-jumbotron-height: $s-xl * 5 !default;
 $jumbotron-bg: lighten($secondary, 35%) !default;
 
 // Navbar

@@ -126,18 +126,40 @@ function register_additional_childtheme_sidebars() {
 
 add_action( 'init', 'register_additional_childtheme_sidebars' );
 
+///
+// Making a short code work in Custom HTML widget
+///
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
 
 ///
 // Speeding the site up: Contact Form 7 and Recaptcha3
 ///
 
-// 1. Deregister Contact Form 7 JavaScript files on all pages without a form
-// add_action( 'wp_print_scripts', 'aa_deregister_javascript', 100 );
-// function aa_deregister_javascript() {
-// 	if ( ! is_page( array('ID', 'page-id-9', 'page-id-534', 'page-id-747') ) ) {
-// 		wp_deregister_script( 'contact-form-7' );
-// 	}
-// }
+// 1. Add confirm your email field to the book a table form
+add_filter( 'wpcf7_validate_email*', 'custom_email_confirmation_validation_filter', 20, 2 );
+function custom_email_confirmation_validation_filter( $result, $tag ) {
+    if ( 'your-email-confirm' == $tag->name ) {
+        $your_email = isset( $_POST['your-email'] ) ? trim( $_POST['your-email'] ) : '';
+        $your_email_confirm = isset( $_POST['your-email-confirm'] ) ? trim( $_POST['your-email-confirm'] ) : '';
+
+        if ( $your_email != $your_email_confirm ) {
+            $result->invalidate( $tag, "Are you sure this is the correct address?" );
+        }
+    }
+
+    return $result;
+}
+
+// 2. Deregister Contact Form 7 JavaScript and CSS files on all pages without a form
+add_action( 'wp_print_scripts', 'aa_deregister_javascript', 100 );
+function aa_deregister_javascript() {
+	// if ( ! is_page( array('ID', 'page-id-9', 'page-id-534', 'page-id-747') ) ) {
+	if (! is_page_template( 'page-templates/page-contact-form.php' )) {
+		wp_deregister_script( 'contact-form-7' );
+		wp_deregister_style( 'contact-form-7' );
+	}
+}
 
 // // 2. Remove Contact Form 7's reCAPTCHA files on all pages without a form
 // add_action( 'wp_enqueue_scripts', 'aa_remove_recaptcha', 9 );
@@ -149,7 +171,7 @@ add_action( 'init', 'register_additional_childtheme_sidebars' );
 // }
 
 // 3. Remove Contact Form 7 styling
-add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-function wps_deregister_styles() {
-    wp_deregister_style( 'contact-form-7' );
-}
+// add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+// function wps_deregister_styles() {
+//     wp_deregister_style( 'contact-form-7' );
+// }

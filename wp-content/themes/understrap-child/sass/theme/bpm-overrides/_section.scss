@@ -1,9 +1,11 @@
-.section-jobs {
-	.col-md-6 {
-		margin-bottom: $s-md;
+.section-lead {
+	.row {
+		align-items: flex-start;
+	}
+}
 
-		@include media-breakpoint-up(lg) {
-			margin-bottom: 0;
-		}
+.section-newsletter {
+	h2 {
+		font-size: $h1-font-size;
 	}
 }

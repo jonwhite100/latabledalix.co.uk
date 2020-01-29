@@ -1,11 +1,11 @@
 // Core theme building blocks that won't ever change
-@import 'theme/bpm-default-core';
+@import '../../../../../jmdwhite/sass/bpm-default-core';
 
 // Site specific overrides of Defaults
 @import 'theme/bpm-overrides/bpm-overrides-variables';
 
 // Site defaults - come after the overrides (variables get declared first)
-@import 'theme/bpm-default/bpm-default-variables';
+@import '../../../../../jmdwhite/sass/bpm-default/bpm-default-variables';
 
 // Load Bootstrap and Understrap files
 @import 'assets/bootstrap4';

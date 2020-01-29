@@ -7053,7 +7053,7 @@ window.addEventListener('load', function () {
 	// Stop carousel from autoplaying
 	jQuery('#carouselJumbotron').carousel({
 		interval: 7000,
-	// 	// wrap: false,
+		wrap: false,
 	// 	// pause: 'hover',
 		ride: true,
 	});
