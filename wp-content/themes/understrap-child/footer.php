@@ -34,10 +34,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 	<div class="<?php echo esc_attr( $container ); ?>">
 		<div class="row">
-			<div class="col">
+			<div class="col col-md-12">
 				<div class="site-info">
 					All content &copy; La Table d'Alix <?php echo date("Y"); ?>. Website by <a href="https://bigplane.co.uk" title="Go to the Big Plane website">Big Plane</a>.
 				</div><!-- .site-info -->
+			</div>
+			<div class="col-md-12 footer-menu">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 			</div>
 		</div><!-- row end -->
 	</div><!-- container end -->

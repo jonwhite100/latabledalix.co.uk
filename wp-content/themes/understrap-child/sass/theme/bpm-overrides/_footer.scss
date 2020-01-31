@@ -4,3 +4,34 @@
   		font-size: $h2-font-size * 1.3;
     }
 }
+
+.site-info {
+	text-align: center;
+
+	@include media-breakpoint-up(md) {
+		text-align: left;
+	}
+}
+
+.footer-menu {
+	text-align: center;
+
+	@include media-breakpoint-up(md) {
+		padding-top: 0;
+		text-align: left;
+	}
+
+	.menu {
+		padding-left: 0;
+	}
+
+	li {
+		margin-left: 0;
+		padding-right: $s-xs;
+		padding-left: $s-xs;
+
+		@include media-breakpoint-up(md) {
+			padding-left: 0;
+		}
+	}
+}

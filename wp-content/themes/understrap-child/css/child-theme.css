@@ -11884,7 +11884,7 @@ body {
 
 .jumbotron-carousel .carousel {
   width: 100%;
-  height: 30rem; }
+  height: 36rem; }
 
 .section-testimonials .carousel-inner {
   min-height: 10rem; }
@@ -11892,7 +11892,7 @@ body {
 .jumbotron-carousel .carousel-item {
   position: relative;
   width: 100%;
-  height: 30rem; }
+  height: 36rem; }
 
 .section-testimonials .carousel-item {
   text-align: center; }
@@ -12332,7 +12332,7 @@ label {
   top: 0;
   bottom: 0;
   width: 100%;
-  min-height: 15rem;
+  min-height: 18rem;
   overflow: hidden;
   z-index: 0; }
   .jumbotron-bg img {
@@ -12342,10 +12342,10 @@ label {
        object-fit: cover; }
   @media (min-width: 768px) {
     .jumbotron-bg {
-      min-height: 20rem; } }
+      min-height: 24rem; } }
   @media (min-width: 992px) {
     .jumbotron-bg {
-      min-height: 30rem; } }
+      min-height: 36rem; } }
 
 .jumbotron-main {
   display: -webkit-box;
@@ -12738,7 +12738,7 @@ p {
     font-size: 3.375rem; }
 
 .jumbotron-carousel .carousel {
-  height: 25rem; }
+  height: 36rem; }
 
 .jumbotron-carousel .img-to-parent {
   background-attachment: fixed;
@@ -12748,6 +12748,28 @@ p {
 .wrapper-footer-widgets h3 {
   margin-bottom: 2rem;
   font-size: 2.275rem; }
+
+.site-info {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .site-info {
+      text-align: left; } }
+
+.footer-menu {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .footer-menu {
+      padding-top: 0;
+      text-align: left; } }
+  .footer-menu .menu {
+    padding-left: 0; }
+  .footer-menu li {
+    margin-left: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem; }
+    @media (min-width: 768px) {
+      .footer-menu li {
+        padding-left: 0; } }
 
 .img-fluid,
 .custom-logo {
@@ -12774,15 +12796,6 @@ p {
 .navbar-brand {
   font-family: "Italianno", sans-serif;
   font-size: 2.25rem; }
-
-.jumbotron {
-  min-height: 30rem; }
-  @media (min-width: 768px) {
-    .jumbotron {
-      min-height: 20rem; } }
-  @media (min-width: 992px) {
-    .jumbotron {
-      min-height: 25rem; } }
 
 .jumbotron-bg {
   display: none; }
@@ -12839,6 +12852,9 @@ p {
     font-family: "Open Sans", sans-serif;
     text-transform: none; }
 
+.list-group-item {
+  background-color: transparent; }
+
 .sr .wp-block-image,
 .sr .blocks-gallery-item {
   visibility: visible; }
@@ -12865,9 +12881,6 @@ p {
 .site {
   margin-top: 0; }
 
-.entry-content {
-  margin-top: 2rem; }
-
 .animated.card.delay-1s {
   -webkit-animation-delay: .33s;
           animation-delay: .33s; }
@@ -12888,8 +12901,15 @@ p {
   -webkit-animation-delay: 1.66s;
           animation-delay: 1.66s; }
 
-.single-post .entry-header {
-  display: block; }
+.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .entry-header .entry-title {
+    width: 100%;
+    font-size: 3.375rem; }
 
 .format-video .card-img-top {
   display: none; }

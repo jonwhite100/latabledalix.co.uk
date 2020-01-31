@@ -5,7 +5,7 @@
 
 // not using sections so add some margins
 .entry-content {
-	margin-top: $s-md;
+	// margin-top: $s-md;
 }
 
 // animate.css
@@ -35,8 +35,13 @@
 
 // ensure the entry-header appear on posts
 .entry-header {
-	.single-post & {
-		display: block;
+	display: flex;
+	padding-top: $s-sm;
+	padding-bottom: $s-sm;
+
+	.entry-title {
+		width: 100%;
+		font-size: $h1-font-size * 1.5;
 	}
 }
 
