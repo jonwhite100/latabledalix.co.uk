@@ -7053,11 +7053,10 @@ window.addEventListener('load', function () {
 	// Stop carousel from autoplaying
 	jQuery('#carouselJumbotron').carousel({
 		interval: 7000,
-		wrap: false,
-	// 	// pause: 'hover',
+		// wrap: false,
+		pause: 'hover',
 		ride: true,
 	});
-
 });
 
 jQuery(document).ready(function ($) {
@@ -7072,7 +7071,7 @@ jQuery(document).ready(function ($) {
 
 	// scroll to an id smoothly: taniarascia.com/smooth-scroll-to-id-with-jquery/
 	$('a[href^="#"]').click(function (e) {
-		var position = $($(this).attr('href')).offset().top - 100;
+		var position = $($(this).attr('href')).offset().top; // .top + 100 format if you want to change it
 
 		e.preventDefault();
 
@@ -7081,7 +7080,7 @@ jQuery(document).ready(function ($) {
 		}, 330, 'linear');
 	});
 
-	// image  function to apply the image source URL to the parent div (and them hide <img />)
+	// image  function to apply the image source URL to the parent div (and then hide <img />)
 	$('.img-to-parent').each(function () {
 		$(this).css('background-image', 'url(' + $(this).find('img').attr('src') + ')');
 		$(this).find('img').remove();

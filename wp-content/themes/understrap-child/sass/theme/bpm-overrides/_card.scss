@@ -1,6 +1,12 @@
 .card {
+	margin-bottom: $s-md;
+
 	figure {
 		margin-bottom: 0;
+
+		img {
+			width: 100%;
+		}
 	}
 }
 .card-img-overlay {

@@ -1,6 +1,29 @@
+/// 1. Note: these height values are repeated in jumbotron.scss
 .jumbotron-carousel {
 	.carousel {
-		height: $s-jumbotron-height;
+		min-height: 80vh;
+
+		@include media-breakpoint-up(md) {
+			min-height: $s-jumbotron-height;
+		}
+
+		@include media-breakpoint-up(lg) {
+			// min-height: $s-jumbotron-height + $s-lg;
+			min-height: 90vh;
+		}
+	}
+
+	.carousel-item {
+		height: 80vh;
+
+		@include media-breakpoint-up(md) {
+			min-height: $s-jumbotron-height;
+		}
+
+		@include media-breakpoint-up(lg) {
+			// min-height: $s-jumbotron-height + $s-lg;
+			min-height: 90vh;
+		}
 	}
 
 	.img-to-parent {

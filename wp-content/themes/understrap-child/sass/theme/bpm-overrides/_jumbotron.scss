@@ -1,26 +1,20 @@
+/// 1. Note: these height values are repeated in carousel.scss
 .jumbotron {
-	// min-height: $s-jumbotron-height;
-	// min-height: 80vh;
+	min-height: 80vh;
 
 
 	@include media-breakpoint-up(md) {
-		// min-height: $s-jumbotron-height / 1.5;
-		// min-height: 30rem;
+		min-height: $s-jumbotron-height;
 	}
 
 	@include media-breakpoint-up(lg) {
-		// min-height: $s-jumbotron-height - $s-xl;
-		// min-height: 25rem;
+		// min-height: $s-jumbotron-height + $s-lg;
+		min-height: 90vh;
 	}
 
 	@include media-breakpoint-up(xl) {
-		// min-height: $s-jumbotron-height;
-		// min-height: 43rem;
+		min-height: $s-jumbotron-height + $s-xs;
 	}
-}
-
-.jumbotron-bg {
-	display: none;
 }
 
 .jumbotron-main {
@@ -29,6 +23,7 @@
 	h1,
 	h2 {
 		padding: $s-xs $s-sm;
+		text-align: center;
 		// border: 1px solid $white;
 	}
 
@@ -69,6 +64,19 @@
 		margin-bottom: $s-md;
 		color: gray('600');
 	}
+
+	.jumbotron-carousel & {
+		margin-top: 0;
+	}
+}
+
+.jumbotron-base {
+	.jumbotron-carousel & {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-bottom: $s-md;
+	}
 }
 
 .jumbotron-text {
@@ -85,4 +93,15 @@
 .jumbotron-img {
 	align-items: center;
 	justify-content: center;
+}
+
+///
+// Override the animate.css for the down arrow
+///
+.animated {
+	&.infinite {
+		.jumbotron & {
+			animation-duration: 5s;
+		}
+	}
 }

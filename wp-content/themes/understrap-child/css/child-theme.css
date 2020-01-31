@@ -12716,8 +12716,12 @@ p {
   border-radius: 0;
   text-transform: uppercase; }
 
-.card figure {
-  margin-bottom: 0; }
+.card {
+  margin-bottom: 2rem; }
+  .card figure {
+    margin-bottom: 0; }
+    .card figure img {
+      width: 100%; }
 
 .card-img-overlay {
   display: -webkit-box;
@@ -12738,12 +12742,30 @@ p {
     font-size: 3.375rem; }
 
 .jumbotron-carousel .carousel {
-  height: 36rem; }
+  min-height: 80vh; }
+  @media (min-width: 768px) {
+    .jumbotron-carousel .carousel {
+      min-height: 36rem; } }
+  @media (min-width: 992px) {
+    .jumbotron-carousel .carousel {
+      min-height: 90vh; } }
+
+.jumbotron-carousel .carousel-item {
+  height: 80vh; }
+  @media (min-width: 768px) {
+    .jumbotron-carousel .carousel-item {
+      min-height: 36rem; } }
+  @media (min-width: 992px) {
+    .jumbotron-carousel .carousel-item {
+      min-height: 90vh; } }
 
 .jumbotron-carousel .img-to-parent {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center; }
+
+#wrapper-footer-full {
+  background-color: #edd0c5; }
 
 .wrapper-footer-widgets h3 {
   margin-bottom: 2rem;
@@ -12797,14 +12819,24 @@ p {
   font-family: "Italianno", sans-serif;
   font-size: 2.25rem; }
 
-.jumbotron-bg {
-  display: none; }
+.jumbotron {
+  min-height: 80vh; }
+  @media (min-width: 768px) {
+    .jumbotron {
+      min-height: 36rem; } }
+  @media (min-width: 992px) {
+    .jumbotron {
+      min-height: 90vh; } }
+  @media (min-width: 1200px) {
+    .jumbotron {
+      min-height: 36.5rem; } }
 
 .jumbotron-main {
   margin-bottom: 2rem; }
   .jumbotron-main h1,
   .jumbotron-main h2 {
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 1rem;
+    text-align: center; }
   .jumbotron-main h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -12822,6 +12854,14 @@ p {
   .jumbotron-main .lead {
     margin-bottom: 2rem;
     color: #6c757d; }
+  .jumbotron-carousel .jumbotron-main {
+    margin-top: 0; }
+
+.jumbotron-carousel .jumbotron-base {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2rem; }
 
 .jumbotron-text {
   -webkit-box-align: center;
@@ -12845,6 +12885,10 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.jumbotron .animated.infinite {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s; }
 
 .list-icon-text {
   padding-left: 1rem; }
