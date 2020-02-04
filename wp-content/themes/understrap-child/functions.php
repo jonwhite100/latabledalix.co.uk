@@ -127,10 +127,18 @@ function register_additional_childtheme_sidebars() {
 add_action( 'init', 'register_additional_childtheme_sidebars' );
 
 ///
-// Making a short code work in Custom HTML widget
+// BPM: Making a short code work in Custom HTML widget
 ///
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
+
+///
+// BPM: removing the [...] from post excerpts
+///
+function trim_excerpt($text) {
+	return str_replace(' [...]', '', $text);
+}
+add_filter('get_the_excerpt', 'trim_excerpt');
 
 ///
 // Speeding the site up: Contact Form 7 and Recaptcha3

@@ -10,6 +10,7 @@
 }
 
 .site-info {
+	padding-top: 0;
 	text-align: center;
 
 	@include media-breakpoint-up(md) {
@@ -21,7 +22,6 @@
 	text-align: center;
 
 	@include media-breakpoint-up(md) {
-		padding-top: 0;
 		text-align: left;
 	}
 

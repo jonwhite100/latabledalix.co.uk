@@ -23,5 +23,13 @@
 .navbar-brand {
 	font-family: $headings-font-family;
 	font-size: $h1-font-size;
-	// text-transform: uppercase;
+
+	.navbar-light & {
+		color: $secondary;
+	}
+}
+
+.navbar-nav {
+	font-size: $font-size-base * .85;
+	text-transform: uppercase;
 }

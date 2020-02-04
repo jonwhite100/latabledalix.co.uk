@@ -5,6 +5,10 @@
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
+// Site brand colours
+$primary: #edd0c5; // pink
+$secondary: #d4af37; // gold
+
 // Buttons
 $c-btn-pulse: rgba($secondary, 0) !default;
 
@@ -27,6 +31,9 @@ $headings-font-family: 'Italianno', sans-serif !default;
 $headings-font-weight: 400 !default;
 $headings-text-transform: 'none' !default;
 
+// Font styling within WP
+$c-entry-title: $gray-700 !default;
+
 // FOnt Awesome
 $c-fa-stack-icon-outer-inverted: $gray-700 !default;
 
@@ -46,14 +53,18 @@ $c-jumbotron-h1: $white !default;
 $c-jumbotron-h2: $white !default;
 $c-jumbotron-heading-bg: transparent !default; //rgba($black, .25) !default;
 $c-jumbotron-base-bg: $white !default;
-$s-jumbotron-height: $s-xl * 6 !default;
+$s-jumbotron-height: 80vh !default;
 $jumbotron-bg: lighten($secondary, 35%) !default;
 
+// Links
+$link-color: $secondary;
+
 // Navbar
-$navbar-light-color:                $secondary !default;
-$navbar-light-color-shrink:         $secondary !default;
-$navbar-light-hover-color:          rgba($secondary, .7) !default;
-$navbar-light-active-color:         rgba($secondary, .7) !default;
-$navbar-light-disabled-color:       rgba($secondary, .3) !default;
+$navbar-light-color:                $gray-700 !default;
+$navbar-light-color-shrink:         $navbar-light-color !default;
+$navbar-light-hover-color:          rgba($navbar-light-color, .7) !default;
+$navbar-light-active-color:         rgba($navbar-light-color, .7) !default;
+$navbar-light-disabled-color:       rgba($navbar-light-color, .3) !default;
 $navbar-light-toggler-border-color: $white;
 $navbar-light-toggler-border-color-shrink: $primary;
+$navbar-nav-link-padding-x: $s-sm !default;
