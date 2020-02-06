@@ -3,6 +3,13 @@
     margin-top: 0;
 }
 
+// spacing at the top of the blog page
+.content-area {
+	.blog & {
+		margin-top: $s-lg;
+	}
+}
+
 // animate.css
 .animated {
 	&.card {
@@ -30,7 +37,7 @@
 
 // ensure the entry-header appear on posts
 .entry-header {
-	display: flex;
+	// display: flex;
 	padding-top: $s-sm;
 	padding-bottom: $s-sm;
 

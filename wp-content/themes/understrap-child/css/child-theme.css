@@ -12901,8 +12901,7 @@ p {
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #edd0c5;
-  display: none; }
+  background-color: #edd0c5; }
   .entry-header .entry-title,
   .entry-header .entry-meta {
     color: #fff;
@@ -12910,6 +12909,9 @@ p {
 
 .site {
   margin-top: 0; }
+
+.blog .content-area {
+  margin-top: 4rem; }
 
 .animated.card.delay-1s {
   -webkit-animation-delay: .33s;
@@ -12932,9 +12934,6 @@ p {
           animation-delay: 1.66s; }
 
 .entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem; }
   .entry-header .entry-title {
