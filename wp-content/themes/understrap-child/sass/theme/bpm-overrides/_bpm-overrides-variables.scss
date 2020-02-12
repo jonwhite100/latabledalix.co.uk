@@ -10,6 +10,10 @@ $primary: #edd0c5; // pink
 $secondary: #d4af37; // gold
 
 // Buttons
+$btn-border-radius:           3rem !default;
+$btn-border-radius-lg:        $btn-border-radius !default;
+$btn-border-radius-sm:        $btn-border-radius !default;
+// $border-radius-lg: 3rem !default;
 $c-btn-pulse: rgba($secondary, 0) !default;
 
 // Colours
@@ -51,7 +55,7 @@ $c-footer-menu-link: $white !default;
 // Jumbotron
 $c-jumbotron-h1: $white !default;
 $c-jumbotron-h2: $white !default;
-$c-jumbotron-heading-bg: transparent !default; //rgba($black, .25) !default;
+$c-jumbotron-heading-bg: rgba(45, 67, 12, .35) !default; //rgba($black, .25) !default;
 $c-jumbotron-base-bg: $white !default;
 $s-jumbotron-height: 80vh !default;
 $jumbotron-bg: lighten($secondary, 35%) !default;

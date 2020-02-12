@@ -11,4 +11,12 @@
 	.wpcf7-response-output {
 		background-color: $white;
 	}
+
+	// on a dark background (newsletter form)
+	.fixed-bg & {
+		label {
+			color: $white;
+
+		}
+	}
 }

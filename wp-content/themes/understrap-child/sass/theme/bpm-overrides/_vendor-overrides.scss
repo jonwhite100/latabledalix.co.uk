@@ -10,6 +10,13 @@
 	}
 }
 
+// inc/extras.php doesn't seem to work, so adding margins to the blog prev/next links under the article
+.post-navigation {
+	.nav-links {
+		margin-bottom: $s-sm;
+	}
+}
+
 // animate.css
 .animated {
 	&.card {

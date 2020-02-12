@@ -1,4 +1,14 @@
 ///
+// Resizing fonts TODO:
+///
+h1 {font-size: $h1-font-size * 1.75};
+h2 {font-size: $h2-font-size * 1.75};
+h3 {font-size: $h3-font-size * 1.75};
+h4 {font-size: $h4-font-size * 1.75};
+h5 {font-size: $h5-font-size * 1.75};
+h6 {font-size: $h6-font-size * 1.75};
+
+///
 // the bar header that contains the page title
 ///
 .entry-header {
