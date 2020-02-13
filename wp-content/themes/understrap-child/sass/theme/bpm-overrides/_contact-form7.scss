@@ -1,9 +1,30 @@
 .wpcf7 {
 	.btn,
 	input[type='submit'] {
-		 & {
-			border-radius: .25rem;
-			background-color: $primary;
+		 &.wpcf7-form-control {
+			// border-radius: .25rem;
+			border-color: $secondary;
+			background-color: $secondary;
+			color: gray('700');
+
+			&:hover,
+			&:active {
+				border-color: $secondary;
+				background-color: darken($secondary, 10%);
+				color: gray('700');
+			}
+
+			&:active {
+				color: $white;
+			}
+
+		}
+	}
+
+	input:not(:disabled) {
+		&:not(.disabled):active[type=submit] {
+			border-color: $secondary;
+			background-color: darken($secondary, 10%);
 			color: $white;
 		}
 	}
